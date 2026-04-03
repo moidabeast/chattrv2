@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-in-the-externallinkdisclaimermodal-component-add-sufficient-horizontal-or-vertical-spacing-between-the-continue-and-cancel-buttons-so-they-are-not-cramped-against-each-other",
+      "title": "In the ExternalLinkDisclaimerModal component, add sufficient horizontal or vertical spacing between the Continue and Cancel buttons so they are not cramped against each other.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-externallinkdisclaimermodal-component-apply-the-font-mono-tailwind-class-to-the-element-displaying-the-target-external-url",
+      "title": "In the ExternalLinkDisclaimerModal component, apply the `font-mono` Tailwind class to the element displaying the target external URL.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "projectName": "Fix link popup button spacing and apply font-mono to URL",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

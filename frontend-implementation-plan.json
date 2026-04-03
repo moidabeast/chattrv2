@@ -1,0 +1,37 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Fix link popup button spacing and apply font-mono to URL",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Add sufficient spacing between Continue and Cancel buttons in ExternalLinkDisclaimerModal",
+      "acceptanceCriteria": [
+        "The Continue and Cancel buttons in the external link disclaimer popup have visible spacing between them on desktop",
+        "Buttons do not visually touch or overlap each other"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ExternalLinkDisclaimerModal.tsx",
+          "operation": "modify",
+          "description": "Add horizontal or vertical spacing between the Continue and Cancel buttons using Tailwind spacing utilities (e.g., gap-2, gap-3, or space-x-2) in the button container element to ensure buttons are visually separated and do not touch each other."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Apply font-mono class to the external URL display in ExternalLinkDisclaimerModal",
+      "acceptanceCriteria": [
+        "The displayed URL in the external link disclaimer popup uses a monospace font",
+        "No other text in the popup is affected by this font change"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ExternalLinkDisclaimerModal.tsx",
+          "operation": "modify",
+          "description": "Add the `font-mono` Tailwind class to the element that displays the target external URL, ensuring only the URL text (not the surrounding dialog content) receives the monospace font styling."
+        }
+      ]
+    }
+  ]
+}
